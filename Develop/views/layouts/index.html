@@ -21,42 +21,64 @@
 </head>
 
 <body>
+
+  <!-- hero / login -->
   <div class="box has-background-success-light">
     <h1 class="font is-size-1 ">Velocity</h1>
+    <div id="login-container">
+      <h2>Login or create an account to access saved data</h2>
+      <div id="login-buttons-container">
+        <button class="button has-background-white mx-auto my-auto font loginButton">Login</button>
+        <button class="button has-background-white mx-auto my-auto font createAccountButton">Create account</button>
+      </div>
+    </div>
   </div class="mx-auto mt-1">
+
+  <!-- Search div -->
+  <!-- mx-auto centers it -->
   <div class="box columns mx-auto mt-1 searchDiv">
+
     <div class="field column">
-      <label class="label">Where to?: </label>
+      <label class="label" id="where-to">Where to? </label>
       <div class="control">
         <input class="input search-bar" type="text" placeholder="Current Location">
+        <div class="lets-ride">
+          <div class="button-container-div">
+            <button class="button has-background-success-light searchButton" id="search-button">Let's Ride!</button>
+        </div>
+        </div>
       </div>
     </div>
 
-    <button class="button has-background-success-light my-auto searchButton">Let's Ride!</button>
   </div>
+
   <Section class="rowBoat">
-    <div class="box columns ml-2 mr-2 mt-5 widgets" style="height: 550px;">
+
+    <div class="box columns mt-5 widgets" style="height: 550px;">
       <h2 id="mapText" class="font is-size-2 widgets">Map</h2>
       <div id="map" style="width: 100%; height: calc(92% - 30px);"></div>
     </div>
 
-    <div class="box columns mt-5 ml-2 mr-2 widgets" style="height: 550px;">
+    <div class="box columns mt-5 widgets" style="height: 550px;">
       <h2 class="font is-size-2 forecastTitle" style="text-align: center;">Forecast</h2>
-      <div>
-      <section class="box columns mt-5 mx-auto city" ></section>
-      <section class="box columns mt-5 mx-auto description"></section>
-      <section class="box columns mt-5 mx-auto temp"></section>
-      <section class="box columns mt-5 mx-auto humidity"></section>
-      <section class="box columns mt-5 mx-auto wind"></section>
-      <section class="box columns mt-5 mx-auto weather" style="display:none"></section>
-    </div>
+        <div>
+        <section class="box columns mt-5 mx-auto city" ></section>
+        <section class="box columns mt-5 mx-auto description"></section>
+        <section class="box columns mt-5 mx-auto temp"></section>
+        <section class="box columns mt-5 mx-auto humidity"></section>
+        <section class="box columns mt-5 mx-auto wind"></section>
+        <section class="box columns mt-5 mx-auto weather" style="display:none"></section>
+        </div>
     </div>
 
   </section>
+
   <div class="mx-auto svBtn">
     <button class="button has-background-success-light mx-auto font saveButton">Save Route</button>
   </div>
+
 </body>
+
 <script src="../../public/js/script.js"></script>
 
 </html>

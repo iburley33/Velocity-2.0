@@ -12,7 +12,7 @@
 
 .widgets {
   justify-content: center;
-  width: 30%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -31,7 +31,37 @@
   width: 40%;
 }
 .svBtn {
-  width: 10%;
+  width: 150px;
+}
+
+#login-container {
+  text-align: center;
+}
+
+.loginButton {
+  width: 150px;
+}
+
+.createAccountButton {
+  width: 170px;
+}
+
+#login-buttons-container {
+  padding: 10px;
+}
+
+#where-to {
+  text-align: center;
+}
+
+.lets-ride {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#search-button {
+  width: 150px;
+  text-align: center;
 }
 
 @media screen and (max-width: 577px) {

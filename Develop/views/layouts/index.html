@@ -28,25 +28,15 @@
     <div id="login-container">
       <h2>Login or create an account to access saved data</h2>
       <div id="login-buttons-container">
-        <button class="button has-background-white mx-auto my-auto font loginButton">Login</button>
-        <button class="button has-background-white mx-auto my-auto font createAccountButton">Create account</button>
+        <a href="login.html">
+        <button class="button has-background-white mx-auto my-auto font loginButton" id="loginButton">Login</button>
+        </a>
+        <a href="createaccount.html">
+          <button class="button has-background-white mx-auto my-auto font createAccountButton">Create account</button>
+        </a>
       </div>
     </div>
 
-    <!-- login credentials for preexisting users -->
-    <div class="box columns mx-auto mt-1 login-credentials-div">
-      <input class="input username-input" type="text" placeholder="Username">
-      <input class="input password-input" type="text" placeholder="Password">
-    </div>
-
-    <div class="box columns mx-auto mt-1 new-user-div">
-      <label class="label">Input new username</label>
-      <input class="input new-username-input" type="text" placeholder="Username">
-      <label class="label">Input new password</label>
-      <input class="input new-password-input" type="text" placeholder="Password">
-      <label class="label">Verify new password</label>
-      <input class="input new-password-verification" type="text" placeholder="Password">
-    </div>
 
   </div class="mx-auto mt-1">
 
@@ -61,6 +51,7 @@
           <div class="button-container-div">
             <button class="button has-background-success-light searchButton" id="search-button">Let's Ride!</button>
             <button class="button has-background-success-light saveButton">Save Route</button>
+            <button class="button has-background-success-light viewButton">View Saved Routes</button>
         </div>
         </div>
     </div>
@@ -92,4 +83,8 @@
 
 <script src="../../public/js/script.js"></script>
 
-</html>git 
+</html>
+
+<!-- Need to work on CSS -->
+<!-- Need to do click event listener -->
+<!-- Need to adjust width of submit button -->

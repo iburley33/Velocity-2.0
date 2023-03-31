@@ -32,11 +32,6 @@
   min-width: 420px;
 }
 
-.login-credentials-div {
-  width: 50%;
-  min-width: 420px;
-}
-
 .new-user-div {
   width: 50%;
   min-width: 420px;
@@ -44,20 +39,13 @@
   flex-wrap: wrap;
 }
 
-.new-username-input {
-  margin: 2.5px;
-}
-
-.new-password-input {
-  margin: 2.5px;
-}
-
-.new-password-verification {
-  margin: 2.5px;
-}
-
 .saveButton {
-  width: 150px;
+  width: 160px;
+  margin-top: 5px;
+}
+
+.viewButton {
+  width: 160px;
   margin-top: 5px;
 }
 
@@ -66,23 +54,15 @@
 }
 
 .loginButton {
-  width: 150px;
+  width: 160px;
 }
 
 .createAccountButton {
-  width: 150px;
+  width: 160px;
 }
 
 #login-buttons-container {
   padding: 10px;
-}
-
-.username-input {
-  margin: 2.5px;
-}
-
-.password-input {
-  margin: 2.5px;
 }
 
 #where-to {
@@ -95,7 +75,7 @@
 }
 
 #search-button {
-  width: 150px;
+  width: 160px;
   text-align: center;
   margin-top: 5px;
 }

@@ -1,0 +1,34 @@
+body {
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.new-user-div {
+    width: 50%;
+    min-width: 420px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  
+.new-username-input {
+  margin: 2.5px;
+}
+
+.new-password-input {
+  margin: 2.5px;
+}
+
+.new-password-verification {
+  margin: 2.5px;
+}
+
+#acct-submit-btn {
+  width: 50%;
+}

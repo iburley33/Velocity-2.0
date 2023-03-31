@@ -1,0 +1,28 @@
+body {
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login-credentials-div {
+    width: 50%;
+    min-width: 420px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.username-input {
+    margin: 2.5px;
+}
+  
+.password-input {
+    margin: 2.5px;
+}
+
+#login-submit-btn {
+    width: 50%;
+  }

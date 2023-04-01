@@ -32,3 +32,9 @@ body {
 #acct-submit-btn {
   width: 50%;
 }
+
+a {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}

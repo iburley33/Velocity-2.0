@@ -24,16 +24,14 @@
 
 <!-- login credentials for preexisting users -->
     <div class="container">
-        <div class="box columns mx-auto my-auto login-credentials-div">
-          <h2>Input email</h2>
-          <input class="input username-input" type="text" placeholder="email">
+        <div class="box columns mx-auto my-auto" id="login-credentials-div">
+          <h2>Input username</h2>
+          <input class="input" id="username-input" type="text" placeholder="Username">
           <h2>Input password</h2>
-          <input class="input password-input" type="text" placeholder="Password">
-          <!-- Not sure if this is optimal, might be better
-          to do the redirect in javascript -->
-          <!-- <a href="index.html"> -->
-            <button class="button has-background-success-light mx-auto mt-4 login-submit-btn" id="login-submit-btn">Submit</button>
-          <!-- </a> -->
+          <input class="input" id="password-input" type="text" placeholder="Password">
+          <a href="index.html">
+          <button class="button has-background-success-light mx-auto mt-4" id="login-submit-btn">Submit</button>
+          </a>
         </div>   
     </div>
 

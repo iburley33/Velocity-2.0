@@ -8,21 +8,31 @@
     flex-wrap: wrap;
 }
 
-.login-credentials-div {
+#login-credentials-div {
     width: 50%;
     min-width: 420px;
     display: flex;
     flex-wrap: wrap;
   }
 
-.username-input {
+#username-input {
     margin: 2.5px;
 }
   
-.password-input {
+#password-input {
     margin: 2.5px;
 }
 
 #login-submit-btn {
     width: 50%;
+<<<<<<< HEAD:public/css/login.css
   } */
+=======
+  }
+  
+a {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+>>>>>>> 49481e903814aa0eaadcd5ba059ee4f952cd4f9e:Develop/public/css/login.css

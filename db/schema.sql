@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS velocity_db;
-CREATE DATABASE velocity_db;
+DROP DATABASE IF EXISTS user_db;
+CREATE DATABASE user_db;

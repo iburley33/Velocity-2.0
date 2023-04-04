@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS velocity_db;
+CREATE DATABASE velocity_db;

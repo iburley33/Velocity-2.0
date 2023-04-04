@@ -1,0 +1,38 @@
+<!-- Search div -->
+  <!-- mx-auto centers it -->
+  <div class="box columns mx-auto mt-1 searchDiv">
+
+    <div class="field column">
+      <label class="label" id="where-to">Where to? </label>
+        <input class="input search-bar" type="text" placeholder="Current Location">
+        <div class="lets-ride">
+          <div class="button-container-div">
+            <button class="button has-background-success-light searchButton" id="search-button">Let's Ride!</button>
+            <button class="button has-background-success-light saveButton">Save Route</button>
+            <button class="button has-background-success-light viewButton">View Saved Routes</button>
+        </div>
+        </div>
+    </div>
+
+  </div>
+
+  <section class="rowBoat">
+
+    <div class="box columns mt-5 widgets" style="height: 550px;">
+      <h2 id="mapText" class="font is-size-2 widgets">Map</h2>
+      <div id="map" style="width: 100%; height: calc(92% - 30px);"></div>
+    </div>
+
+    <div class="box columns mt-5 widgets" style="height: 550px;">
+      <h2 class="font is-size-2 forecastTitle" style="text-align: center;">Forecast</h2>
+        <div>
+        <section class="box columns mt-5 mx-auto city" ></section>
+        <section class="box columns mt-5 mx-auto description"></section>
+        <section class="box columns mt-5 mx-auto temp"></section>
+        <section class="box columns mt-5 mx-auto humidity"></section>
+        <section class="box columns mt-5 mx-auto wind"></section>
+        <section class="box columns mt-5 mx-auto weather" style="display:none"></section>
+        </div>
+    </div>
+
+  </section>

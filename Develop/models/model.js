@@ -15,12 +15,12 @@ class UserModel {
     return user;
   }
 
-  async saveRoute(username, location, trails, weather) {
+  async saveRoute(username, location) {
     const user = await User.findOneAndUpdate(
       { username },
       {
         $push: {
-          savedRoutes: { location, trails, weather },
+          savedRoutes: { location },
         },
       },
       { new: true }

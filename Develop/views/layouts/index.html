@@ -14,8 +14,8 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin="">
-    </script>
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+  <script src="handlebars-v4.7.7.js"></script>
   <link rel="stylesheet" href="../../public/css/style.css">
   <title>Velocity Home Page</title>
 </head>
@@ -42,23 +42,28 @@
 
   <!-- Search div -->
   <!-- mx-auto centers it -->
-  <div class="box columns mx-auto mt-1 searchDiv">
+  <div class="box columns mx-auto mt-1 search-div" id="search-div">
 
     <div class="field column">
-      <label class="label" id="where-to">Where to? </label>
+      <label class="label" id="where-to-label">Where to? </label>
         <input class="input search-bar" type="text" placeholder="Current Location">
         <div class="lets-ride">
           <div class="button-container-div">
             <button class="button has-background-success-light searchButton" id="search-button">Let's Ride!</button>
-            <button class="button has-background-success-light saveButton">Save Route</button>
-            <button class="button has-background-success-light viewButton">View Saved Routes</button>
+            <button class="button has-background-success-light saveButton">Add to Favorites</button>
+            <!-- <button class="button has-background-success-light viewButton">View Favorites</button> -->
+            <script type="text/x-handlebars-template">
+                  <ul>
+                    
+                  </ul>
+            </script>
         </div>
         </div>
     </div>
 
   </div>
 
-  <Section class="rowBoat">
+  <Section class="rowBoat mb-5">
 
     <div class="box columns mt-5 widgets" style="height: 550px;">
       <h2 id="mapText" class="font is-size-2 widgets">Map</h2>

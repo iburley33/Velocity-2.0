@@ -27,7 +27,7 @@
   position: relative;
 }
 
-.searchDiv {
+#search-div {
   width: 50%;
   min-width: 420px;
 }
@@ -65,7 +65,7 @@
   padding: 10px;
 }
 
-#where-to {
+#where-to-label {
   text-align: center;
 }
 
@@ -81,10 +81,10 @@
 }
 
 @media screen and (max-width: 577px) {
-  .searchDiv {
+  #search-div {
     width: 90%;
   }
-  .login-credentials-div {
+  #login-credentials-div {
     width: 90%;
   }
   .rowBoat {

@@ -16,25 +16,37 @@
   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin="">
     </script>
-  <link rel="stylesheet" href="../../public/css/login.css">
+  <link rel="stylesheet" href="../../public/css/style.css">
   <title>Velocity Home Page</title>
 </head>
 
-<body class="has-background-success-light">
+<body>
 
-<!-- login credentials for preexisting users -->
-    <div class="container">
-        <div class="box columns mx-auto my-auto" id="login-credentials-div">
-          <h2>Input username</h2>
-          <input class="input" id="username-input" type="text" placeholder="Username">
-          <h2>Input password</h2>
-          <input class="input" id="password-input" type="text" placeholder="Password">
-          <a href="index.html">
-          <button class="button has-background-success-light mx-auto mt-4" id="login-submit-btn">Submit</button>
-          </a>
-        </div>   
-    </div>
+  <!-- hero / login -->
+  {{!-- <div class="box has-background-success-light">
+    <h1 class="font is-size-1 ">Velocity</h1>
+    <div id="login-container">
+      <h2>Login or create an account to access saved data</h2>
+      <div id="login-buttons-container">
+        <a href="login.html">
+        <button class="button has-background-white mx-auto my-auto font loginButton" id="loginButton">Login</button>
+        </a>
+        <a href="createaccount.html">
+          <button class="button has-background-white mx-auto my-auto font createAccountButton">Create account</button>
+        </a>
+      </div>
+    </div> --}}
+
+    {{{ body }}} 
+
+
+  </div class="mx-auto mt-1">
+</body>
 
 <script src="../../public/js/script.js"></script>
 
-</body>
+</html>
+
+<!-- Need to work on CSS -->
+<!-- Need to do click event listener -->
+<!-- Need to adjust width of submit button -->

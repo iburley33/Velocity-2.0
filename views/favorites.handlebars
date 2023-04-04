@@ -1,0 +1,8 @@
+<section class="container">
+
+  <section class="flex-row justify-center">
+    {{#each user.savedRoutes as |favorite|}}
+    {{> favorite-details}}
+    {{/each}}
+  </section>
+</section>

@@ -23,6 +23,7 @@
     "express-session": "^1.17.1",
     "mongoose": "^7.0.3",
     "mysql2": "^2.2.5",
+    "nodemon": "^2.0.22",
     "sequelize": "^6.3.5"
   },
   "bugs": {

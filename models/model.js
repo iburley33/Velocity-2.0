@@ -1,7 +1,7 @@
 const db = require("./db");
 const User = require("./schema");
 
-class UserModel {
+class User {
   constructor() {}
 
   async addUser(username, password) {
@@ -29,4 +29,4 @@ class UserModel {
   }
 }
 
-module.exports = UserModel;
+module.exports = User;

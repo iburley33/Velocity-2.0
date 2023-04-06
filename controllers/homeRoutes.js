@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { UserModel } = require('../models');
+const { User } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
@@ -16,6 +16,7 @@ router.get('/', withAuth, async (req, res) => {
       logged_in: req.session.logged_in,
     });
   } catch (err) {
+    console.err(err);
     res.status(500).json(err);
   }
 });
@@ -41,7 +42,7 @@ router.get('/newuser', (req, res) => {
 // GET all favorites for homepage
 router.get('/', withAuth, async (req, res) => {
   try {
-    const user = await UserModel.findOne({id: req.session.user_id});
+    const user = await User.findOne({id: req.session.user_id});
 
     user.get({ plain: true });
 

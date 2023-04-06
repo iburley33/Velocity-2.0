@@ -22,6 +22,15 @@ const loginFormHandler = async (event) => {
   }
 };
 
+const redirectCreate = (event) => {
+  event.preventDefault()
+  document.location.replace("/newuser");
+}
+
 document
   .getElementById("login-submit-btn")
   .addEventListener("click", loginFormHandler);
+
+  document
+  .getElementById("create-account-btn")
+  .addEventListener("click", redirectCreate);

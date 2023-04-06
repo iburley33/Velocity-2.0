@@ -29,6 +29,15 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+router.get('/newuser', (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('createaccount');
+});
+
 // GET all favorites for homepage
 router.get('/', withAuth, async (req, res) => {
   try {

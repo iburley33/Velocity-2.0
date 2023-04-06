@@ -2,13 +2,15 @@ const { User } = require('../models');
 
 const userData = [
   {
-    // name:
-    username: 'Plain T-Shirt',
-    // password: Password12345
-    savedRoutes: ["San Francisco", "Petaluma", "San Jose"],
+    username: 'Nick Nixon',
+    password: 'Password123',
+  },
+  {
+    username: 'Will Wilson',
+    password: 'Password234',
   }
 ];
 
-const seedProducts = () => Product.bulkCreate(productData);
+const seedUser = () => User.bulkCreate(userData);
 
-module.exports = seedProducts;
+module.exports = seedUser;

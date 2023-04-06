@@ -24,19 +24,19 @@
 
 <!-- Inputs for new users -->
     <div class="container">
-        <div class="box columns mx-auto my-auto new-user-div">
+        <form class="box columns mx-auto my-auto new-user-div">
             <h2>Input full name</h2>
-            <input class="input new-username-input" type="text" placeholder="Full name">
+            <input class="input new-name-input" type="text" placeholder="Full name">
             <h2>Input username</h2>
             <input class="input new-username-input" type="text" placeholder="Username">
             <h2>Input new password</h2>
             <input class="input new-password-input" type="text" placeholder="Password">
             <h2>Verify new password</h2>
             <input class="input new-password-verification" type="text" placeholder="Password">
-            <a href="index.html">
+            <a {{!-- href="index.html" --}}>
               <button class="button has-background-success-light mx-auto mt-4 acct-submit-btn" id="acct-submit-btn">Submit</button>
             </a>
-          </div>   
+          </form>   
     </div>
 
 <script src="../../public/js/script.js"></script>

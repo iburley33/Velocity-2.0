@@ -6,9 +6,9 @@ let weather = {
 
     fetch(
       "https://api.openweathermap.org/data/2.5/weather?q=" +
-        city +
-        "&units=metric&appid=" +
-        this.apiKey
+      city +
+      "&units=metric&appid=" +
+      this.apiKey
     )
       .then((response) => {
         if (!response.ok) {
@@ -94,6 +94,18 @@ setLocation();
 function saveLocation() {
   var text = searchBar.value;
   localStorage.setItem("city", text);
-}
+};
 
-document.querySelector(".saveButton").addEventListener("click", saveLocation);
+const logoutHandler = async () => {
+  fetch("/api/users/logout", {
+    method: "POST",
+  }).then(res => {
+    if (res.status==204) {
+      document.location.replace("/login")
+    }
+  });
+};
+
+/* document.querySelector(".saveButton").addEventListener("click", saveLocation);
+ */
+document.querySelector("#logout-button").addEventListener("click", logoutHandler);

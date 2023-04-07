@@ -112,34 +112,34 @@ body {
 } */
 
 .container {
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .login-credentials-div {
-    width: 50%;
-    min-width: 420px;
-    display: flex;
-    flex-wrap: wrap;
-  }
+  width: 50%;
+  min-width: 420px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 #username-input {
-    margin: 2.5px;
+  margin: 2.5px;
 }
-  
+
 #password-input {
-    margin: 2.5px;
+  margin: 2.5px;
 }
 
 #login-submit-btn {
-    width: 100%;
- }
-  
+  width: 100%;
+}
+
 a {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* create account */
@@ -162,23 +162,23 @@ a {
 }
 
 .new-username-input {
-margin: 2.5px;
+  margin: 2.5px;
 }
 
 .new-password-input {
-margin: 2.5px;
+  margin: 2.5px;
 }
 
 .new-password-verification {
-margin: 2.5px;
+  margin: 2.5px;
 }
 
 #acct-submit-btn {
-width: 50%;
+  width: 50%;
 }
 
 a {
-width: 100%;
-display: flex;
-flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }

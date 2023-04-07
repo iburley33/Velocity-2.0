@@ -22,17 +22,17 @@
 
 <body>
 
+<div class="navbar-end">
+  {{#if currentUser}}
+  <a class="navbar-item" href="/controllers/api/userRoutes.js">Logout</a>
+  {{/if}}
+</div>
+
   <div class="box has-background-success-light">
     <h1 class="font is-size-1 ">Velocity</h1>
 
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <button class="button is-white is-small" id="logout-button">
-            Logout
-          </button>
-        </div>
-      </div>
+
+    
 
   {{!--  <div id="login-container">
       <h2>Login or create an account to access saved data</h2>
